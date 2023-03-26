@@ -21,14 +21,14 @@ def convert():
 
     os.system("ffmpeg -i "+file_name+" output_audio.wav")
 
-    # # open files
-    # file = open(FILE_PATH, "rb")
-    # # package stuff to send and perform POST request
-    # values = {"file": (FILE_PATH, file, "audio/wav")}
-    # response = requests.post(URL, files=values)
-    # data = response.json()
+    # open files
+    file = open(FILE_PATH, "rb")
+    # package stuff to send and perform POST request
+    values = {"file": (FILE_PATH, file, "audio/wav")}
+    response = requests.post(URL, files=values)
+    data = response.json()
 
-    # print("Predicted keyword: {}".format(data["keyword"]))
+    print("Predicted keyword: {}".format(data["keyword"]))
 
     os.remove(file_name)
     return "data"
