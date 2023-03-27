@@ -1,0 +1,4 @@
+# my-lair-a > requirements.txt
+Flask==2.0.1
+beautifulsoup4==4.6.3
+pandas==0.23.3

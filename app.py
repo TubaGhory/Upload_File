@@ -31,8 +31,7 @@ def convert():
     print("Predicted keyword: {}".format(data["keyword"]))
 
     os.remove(file_name)
-    return "data"
-# ["keyword"]
+    return data["keyword"]
 
 if __name__ == "__main__":
     app.run(debug = False,host="0.0.0.0")
